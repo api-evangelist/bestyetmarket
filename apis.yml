@@ -1,23 +1,51 @@
 aid: bestyetmarket
+
 name: Bestyetmarket
-description: 'Bestyetmarket is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bestyetmarket is a stub entry created from the API Evangelist secondary‑market harvest. The company appears in public listings as a regional supermarket chain formerly operating in New York, Connecticut, and New Jersey under the brand Best Yet Market. It was founded in 1994 and headquartered in Bethpage, New York. No active corporate website or API documentation could be located despite web searches, indicating the business may be defunct or its online presence is unavailable.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bestyetmarket/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Retail
+- Grocery
+- Supermarket
+- NewYork
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bestyetmarket-hosts.yml
+- type: Vendors
+  url: vendors/bestyetmarket-vendors.yml
+- type: DomainSecurity
+  url: security/bestyetmarket-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/bestyetmarket
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
